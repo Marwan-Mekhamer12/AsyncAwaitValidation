@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F45C489B2FEDD5C2006F02DF /* SignUpNetworking .swift in Sources */ = {isa = PBXBuildFile; fileRef = F45C489A2FEDD5C2006F02DF /* SignUpNetworking .swift */; };
+		F45C489D2FEDD5D1006F02DF /* LogInNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45C489C2FEDD5D1006F02DF /* LogInNetworking.swift */; };
 		F46DB9F32E0C99990012D87C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DB9F22E0C99990012D87C /* AppDelegate.swift */; };
 		F46DB9F52E0C99990012D87C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DB9F42E0C99990012D87C /* SceneDelegate.swift */; };
 		F46DB9F72E0C99990012D87C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DB9F62E0C99990012D87C /* ViewController.swift */; };
 		F46DB9FA2E0C99990012D87C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46DB9F82E0C99990012D87C /* Main.storyboard */; };
 		F46DB9FC2E0C999E0012D87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46DB9FB2E0C999E0012D87C /* Assets.xcassets */; };
 		F46DB9FF2E0C999E0012D87C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46DB9FD2E0C999E0012D87C /* LaunchScreen.storyboard */; };
+		F46DBA0A2E0C9ACB0012D87C /* ValidationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DBA092E0C9ACB0012D87C /* ValidationErrors.swift */; };
+		F46DBA0C2E0C9C8B0012D87C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DBA0B2E0C9C8B0012D87C /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F45C489A2FEDD5C2006F02DF /* SignUpNetworking .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpNetworking .swift"; sourceTree = "<group>"; };
+		F45C489C2FEDD5D1006F02DF /* LogInNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInNetworking.swift; sourceTree = "<group>"; };
 		F46DB9EF2E0C99990012D87C /* Grand Hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grand Hotel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46DB9F22E0C99990012D87C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F46DB9F42E0C99990012D87C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		F46DB9FB2E0C999E0012D87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46DB9FE2E0C999E0012D87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F46DBA002E0C999E0012D87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F46DBA092E0C9ACB0012D87C /* ValidationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrors.swift; sourceTree = "<group>"; };
+		F46DBA0B2E0C9C8B0012D87C /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				F46DB9F22E0C99990012D87C /* AppDelegate.swift */,
 				F46DB9F42E0C99990012D87C /* SceneDelegate.swift */,
-				F46DB9F62E0C99990012D87C /* ViewController.swift */,
+				F46DBA082E0C9AB50012D87C /* Model */,
+				F46DBA062E0C9AA70012D87C /* View */,
+				F46DBA072E0C9AB30012D87C /* ViewModel */,
 				F46DB9F82E0C99990012D87C /* Main.storyboard */,
 				F46DB9FB2E0C999E0012D87C /* Assets.xcassets */,
 				F46DB9FD2E0C999E0012D87C /* LaunchScreen.storyboard */,
 				F46DBA002E0C999E0012D87C /* Info.plist */,
 			);
 			path = "Grand Hotel";
+			sourceTree = "<group>";
+		};
+		F46DBA062E0C9AA70012D87C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F46DB9F62E0C99990012D87C /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F46DBA072E0C9AB30012D87C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F46DBA082E0C9AB50012D87C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F45C489A2FEDD5C2006F02DF /* SignUpNetworking .swift */,
+				F45C489C2FEDD5D1006F02DF /* LogInNetworking.swift */,
+				F46DBA092E0C9ACB0012D87C /* ValidationErrors.swift */,
+				F46DBA0B2E0C9C8B0012D87C /* Validation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45C489B2FEDD5C2006F02DF /* SignUpNetworking .swift in Sources */,
 				F46DB9F72E0C99990012D87C /* ViewController.swift in Sources */,
+				F46DBA0A2E0C9ACB0012D87C /* ValidationErrors.swift in Sources */,
 				F46DB9F32E0C99990012D87C /* AppDelegate.swift in Sources */,
+				F46DBA0C2E0C9C8B0012D87C /* Validation.swift in Sources */,
 				F46DB9F52E0C99990012D87C /* SceneDelegate.swift in Sources */,
+				F45C489D2FEDD5D1006F02DF /* LogInNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
