@@ -33,3 +33,11 @@ class LogInNetworking: LogInProtocol {
         
     }
 }
+
+/// Mark: -    Simple code
+extension LogInNetworking {
+    func LogIn(_ email: String, _ password: String) async throws -> User {
+        let userResult = try await Auth.auth().signIn(withEmail: email, password: password)
+        return userResult.user
+    }
+}

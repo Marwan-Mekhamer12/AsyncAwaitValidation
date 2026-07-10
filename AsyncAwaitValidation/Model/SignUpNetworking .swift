@@ -32,3 +32,14 @@ class SignUpNetworking: signUpProtocol {
         })
     }
 }
+
+
+
+/// Mark: -   Simple code
+extension SignUpNetworking {
+    func signUp(_ email: String, _ password: String) async throws -> User {
+        let userReult = try await Auth.auth().createUser(withEmail: email, password: password)
+        return userReult.user
+        
+    }
+}
